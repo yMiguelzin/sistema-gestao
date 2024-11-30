@@ -1,0 +1,198 @@
+/* Definindo o estilo básico e ajustando o rodapé */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 80px; /* Ajuste para o cabeçalho fixo */
+    background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+/* Hotbar */
+header {
+    z-index: 9999;
+    background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+    padding: 15px 30px;
+}
+
+header .logo {
+    font-weight: 600;
+    color: white; /* Cor clara para o título */
+    font-size: 1.5rem;
+}
+
+header .btn {
+    font-weight: 500;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Cores diferenciadas para os cards */
+.card-hr {
+    background: linear-gradient(145deg, #6f42c1, #4e2a84); /* Roxo para RH */
+    color: white;
+}
+
+.card-finance {
+    background: linear-gradient(145deg, #007bff, #0056b3); /* Azul para Financeiro */
+    color: white;
+}
+
+.card-project {
+    background: linear-gradient(145deg, #28a745, #218838); /* Verde para Projetos */
+    color: white;
+}
+
+/* Cards gerais */
+section#funcionalidades .card {
+    margin-bottom: 30px;
+}
+
+/* Botões brancos com efeito hover */
+.btn-login, .btn-cadastrar {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent; /* Fundo transparente */
+    padding: 10px 20px; /* Ajuste do tamanho do botão */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px; /* Arredondamento suave */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-login:hover, .btn-cadastrar:hover {
+    background-color: #ffffff; /* Fundo branco no hover */
+    color: #333333; /* Cor do texto no hover */
+}
+
+/* Rodapé fixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Ajustes de texto */
+.text-primary {
+    color: #3a86ff;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Estilos para o sistema de gestão */
+.container-fluid {
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+/* Formulário de Campos Personalizados */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input[type="text"], .form-group input[type="number"], .form-group select {
+    margin-top: 5px;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #3a86ff;
+    outline: none;
+}
+
+/* Botão de Submit */
+.btn-submit {
+    background-color: #3a86ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0063cc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 0.875rem;
+    }
+
+    /* Ajustes no formulário */
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,196 @@
+/* Estilos Globais */
+body {
+    background-color: #f4f7fb;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 53px; /* Manter para evitar sobreposição com a navbar */
+    margin: 0; /* Garantir que o body não tenha margens extras */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Container de Configurações */
+.settings-container {
+    max-width: 600px;
+    margin: 70px auto 50px auto; /* Ajusta para a altura da navbar fixa */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+/* Seções */
+.settings-section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botões de Tema */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-toggle-light, .btn-toggle-dark {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-toggle-light:hover, .btn-toggle-dark:hover {
+    background-color: #0056b3;
+}
+
+/* Botões */
+.btn-edit, .btn-danger, .btn-submit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-edit:hover, .btn-danger:hover, .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Formulários */
+.form-container {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.form-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+}
+
+ /* Rodapé fixo */
+ footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+        .theme-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .theme-card {
+            cursor: pointer;
+        }
+
+        .theme-card:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05); /* Efeito de pulsar (aumentando o tamanho) */
+        }
+
+        .theme-description {
+            height: 95px;
+            overflow: hidden;
+        }
+        
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .settings-container {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .btn-toggle-theme {
+        margin-top: 10px;
+    }
+}
+
+/* Formulário de Campos Personalizados */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+

@@ -1,0 +1,140 @@
+body {
+    background-color: #f4f7fb;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 53px; /* Manter para evitar sobreposição com a navbar */
+    margin: 0; /* Garantir que o body não tenha margens extras */
+}
+
+.hero {
+    background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+    color: white;
+    padding: 45px 0;
+    margin-bottom: 30px; /* Controle o espaçamento entre o hero e a próxima seção */
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.form-section {
+    padding: 0px 0;
+    margin-bottom: 0; /* Remover qualquer margem extra para ajustar o espaçamento */
+}
+
+.form-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 18px;
+}
+
+.form-card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.form-description {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.scroll-container {
+    max-height: 342px; /* Altura máxima para a área de scroll */
+    overflow-y: auto;  /* Permite o scroll vertical */
+    margin-bottom: 30px; /* Espaço abaixo da lista */
+    padding-right: 5px; /* Adiciona espaçamento à direita */
+}
+
+.btn-custom {
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 6px;
+    padding: 12px 25px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #5e4ebf;
+}
+
+/* Rodapé fixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Navbar com fundo branco */
+.navbar {
+    background-color: white !important;
+    position: fixed; /* Fixando a navbar para não sobrepor o conteúdo */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+/* Formulário de Campos Personalizados */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn-login:hover, .btn-cadastrar:hover {
+    background-color: #ffffff; /* Fundo branco no hover */
+    color: #333333; /* Cor do texto no hover */
+}
+
+

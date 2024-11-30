@@ -1,0 +1,29 @@
+CREATE DATABASE sistema_gestao;
+
+USE sistema_gestao;
+
+-- Tabela de Usuários
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    tentativas_falhas INT DEFAULT 0,
+    tempo_bloqueio DATETIME DEFAULT NULL
+);
+
+-- Tabela de Sistemas
+CREATE TABLE sistemas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_sistema VARCHAR(255) NOT NULL,
+    campos TEXT NOT NULL,  -- Campos em formato JSON
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela de Dados dos Sistemas
+CREATE TABLE dados_sistemas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_sistema INT NOT NULL,
+    dados JSON,  -- Dados em formato JSON
+    FOREIGN KEY (id_sistema) REFERENCES sistemas(id) ON DELETE CASCADE
+);

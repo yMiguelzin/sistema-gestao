@@ -1,0 +1,112 @@
+body {
+    background-color: #f4f7fb;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 53px; /* Manter para evitar sobreposição com a navbar */
+    margin: 0; /* Garantir que o body não tenha margens extras */
+}
+
+        .hero {
+            background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+            color: white;
+            padding: 53px 0;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Adicionando transição suave para o efeito de pulsar */
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Rodapé fixo */
+    footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #3a86ff, #8338ec, #00d100);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+        .theme-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .theme-card {
+            cursor: pointer;
+        }
+
+        .theme-card:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05); /* Efeito de pulsar (aumentando o tamanho) */
+        }
+
+        .theme-description {
+            height: 95px;
+            overflow: hidden;
+        }
+        
+        /* Efeito de pulsação quando o mouse passa sobre o cartão */
+        .card:hover {
+            animation: pulsar-animation 1s infinite;
+        }
+
+        .theme-description{
+            text-align: justify;
+        }
+
+        @keyframes pulsar-animation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05); /* Aumenta o tamanho 5% */
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        /* Formulário de Campos Personalizados */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn-login:hover, .btn-cadastrar:hover {
+    background-color: #ffffff; /* Fundo branco no hover */
+    color: #333333; /* Cor do texto no hover */
+}
+
+
