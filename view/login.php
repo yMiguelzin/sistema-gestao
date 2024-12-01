@@ -71,6 +71,11 @@ unset($_SESSION['erro_login']);
         </div>
     </main>
 
+        <!-- Rodapé -->
+        <footer class="bg-primary text-white text-center py-3 fixed-bottom">
+        <p class="mb-0"><b>&copy; 2024 Sistema de Gestão Universal. Todos os direitos reservados.</b></p>
+    </footer>
+    
     <script src="../scripts/script.js"></script>
 </body>
 </html>

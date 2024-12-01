@@ -1,3 +1,4 @@
+
 CREATE DATABASE sistema_gestao;
 
 USE sistema_gestao;
@@ -12,18 +13,30 @@ CREATE TABLE usuarios (
     tempo_bloqueio DATETIME DEFAULT NULL
 );
 
--- Tabela de Sistemas
-CREATE TABLE sistemas (
+-- Tabela de Produtos
+CREATE TABLE produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome_sistema VARCHAR(255) NOT NULL,
-    campos TEXT NOT NULL,  -- Campos em formato JSON
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10, 2) NOT NULL,
+    quantidade INT NOT NULL
 );
 
--- Tabela de Dados dos Sistemas
-CREATE TABLE dados_sistemas (
+-- Tabela de Vendas
+CREATE TABLE vendas (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    id_sistema INT NOT NULL,
-    dados JSON,  -- Dados em formato JSON
-    FOREIGN KEY (id_sistema) REFERENCES sistemas(id) ON DELETE CASCADE
+    id_produto INT NOT NULL,
+    quantidade INT NOT NULL,
+    total DECIMAL(10, 2) NOT NULL,
+    data_venda DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_produto) REFERENCES produtos(id)
+);
+
+-- Tabela de Clientes
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(150) UNIQUE NOT NULL,
+    telefone VARCHAR(20),
+    endereco TEXT
 );
